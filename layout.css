@@ -1,0 +1,103 @@
+/**
+ * Tableless Layout for default template
+ *
+ * @author Andreas Gohr <andi@splitbrain.org>
+ * @author moraes <moraes@tipos.com.br>
+ * @author Martin Gill <martin@martinsgill.co.uk>
+ */
+
+/* Stop the web page from getting too wide */
+/* If you need to support 800x600 you'll have to reduce, or remove this */
+div.dokuwiki {
+/*	width: 100%;
+	margin-left: auto;
+	margin-right: auto;*/
+	padding: 0px 20px 20px 20px;
+}
+
+/* -------------- top row --------------- */
+div.dokuwiki .header {
+  padding: 3px 0px 0px 2px;
+  position: relative;
+}
+
+div.dokuwiki .pagename {
+  float: left;
+  font-size: 100%;
+  color: __text__;
+  text-align: left;
+  vertical-align: middle;
+  margin-left: 13px;
+  margin-top: 14px;
+  padding-bottom: 10px;
+}
+
+div.dokuwiki .pagename a {
+  color: __text_logo__ !important;
+  text-decoration: none !important;
+}
+
+div.dokuwiki .pagename a:hover {
+  color: __text__ !important;
+  text-decoration: underline overline !important;
+}
+
+div.dokuwiki .logo {
+  float: right;
+  font-size: 180%;
+  font-weight: bolder;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  top: 85px;
+}
+
+div.dokuwiki .logo a {
+  color: __text_logo__ !important;
+  text-decoration: none !important;
+  font-variant: small-caps;
+  letter-spacing: 2pt;
+}
+
+/* ---------------  top and bottom bar ---------------- */
+div.dokuwiki .bar {
+  background: url(images/titlebg.jpg);
+  padding: 0.1em 0.15em;
+  clear: both;
+}
+
+div.dokuwiki .barwrap {
+  padding: 3px;
+  border: 1px solid #333333;
+  clear: both;
+}
+
+div.dokuwiki .bar-left {
+  float: left;
+}
+
+div.dokuwiki .bar-right {
+  float: right;
+  text-align: right;
+}
+
+div.dokuwiki #bar__bottom {
+  margin-bottom:3px;
+}
+
+/* ------------- File Metadata ----------------------- */
+
+div.dokuwiki div.meta {
+  clear: both;
+  margin-top: 1em;
+  color: __text_alt__;
+  font-size: 70%;
+}
+
+div.dokuwiki div.meta div.user {
+  float: left;
+}
+
+div.dokuwiki div.meta div.doc {
+  text-align: right;
+}
